@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="168" id="bXh-GF-joB" customClass="StationStatisticTableViewCell" customModule="Gas_Stations" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="168"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bXh-GF-joB" id="1wh-F0-iGx">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="168"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="StationName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3E-Rn-AZP">
+                        <rect key="frame" x="20" y="9" width="374" height="20"/>
+                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Adress" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2H-NO-pCy">
+                        <rect key="frame" x="20" y="31" width="374" height="18.5"/>
+                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fuel provider:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZrI-EU-OYm">
+                        <rect key="frame" x="20" y="55.5" width="94.5" height="17.5"/>
+                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n2c-8R-25S">
+                        <rect key="frame" x="132" y="56" width="265" height="16"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="46W-lR-QEp"/>
+                            <constraint firstAttribute="width" constant="265" id="9Ut-ch-7lX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="15"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HDG-8r-LZK">
+                        <rect key="frame" x="132" y="80" width="265" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="265" id="L3N-xl-oVr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="15"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1j-J8-CYc">
+                        <rect key="frame" x="20" y="130" width="110" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="gN6-8G-bjw"/>
+                            <constraint firstAttribute="width" constant="110" id="mLC-na-7rj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="15"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gallons of fuel:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yuU-qa-RKu">
+                        <rect key="frame" x="20" y="80" width="100.5" height="18"/>
+                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="15"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Station users" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUh-go-yd9">
+                        <rect key="frame" x="288.5" y="105" width="108.5" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="108.5" id="QQg-98-tj3"/>
+                            <constraint firstAttribute="height" constant="18" id="ejp-kf-BfA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQz-50-gPv">
+                        <rect key="frame" x="287.5" y="125" width="110.5" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="aXR-lF-ZiC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="21"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fuel type:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wcQ-00-8Ay">
+                        <rect key="frame" x="20" y="105" width="66" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="15"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ng4-Tm-dX9">
+                        <rect key="frame" x="133.5" y="128" width="71" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="pnP-H5-xB7"/>
+                            <constraint firstAttribute="width" constant="110" id="q1B-gz-1zr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="15"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZhH-fz-INq">
+                        <rect key="frame" x="149" y="105" width="38.5" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="15"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yuU-qa-RKu" firstAttribute="leading" secondItem="ZrI-EU-OYm" secondAttribute="leading" id="1lo-qV-D6q"/>
+                    <constraint firstItem="HDG-8r-LZK" firstAttribute="trailing" secondItem="YQz-50-gPv" secondAttribute="trailing" constant="-1" id="3Nl-za-0XQ"/>
+                    <constraint firstItem="yuU-qa-RKu" firstAttribute="top" secondItem="ZrI-EU-OYm" secondAttribute="bottom" constant="7" id="9Jd-Rs-YQb"/>
+                    <constraint firstItem="m2H-NO-pCy" firstAttribute="top" secondItem="V3E-Rn-AZP" secondAttribute="bottom" constant="2" id="AEs-ps-rMY"/>
+                    <constraint firstItem="Ng4-Tm-dX9" firstAttribute="centerX" secondItem="ZhH-fz-INq" secondAttribute="centerX" id="EbN-mx-Hwa"/>
+                    <constraint firstItem="wcQ-00-8Ay" firstAttribute="firstBaseline" secondItem="ZhH-fz-INq" secondAttribute="firstBaseline" id="Fig-3H-6QB"/>
+                    <constraint firstItem="wcQ-00-8Ay" firstAttribute="baseline" secondItem="ZhH-fz-INq" secondAttribute="baseline" id="FsZ-1a-MYS"/>
+                    <constraint firstItem="I1j-J8-CYc" firstAttribute="top" secondItem="wcQ-00-8Ay" secondAttribute="bottom" constant="7" id="GnU-hH-2oi"/>
+                    <constraint firstAttribute="trailing" secondItem="qUh-go-yd9" secondAttribute="trailing" constant="17" id="IYn-bR-IYF"/>
+                    <constraint firstItem="I1j-J8-CYc" firstAttribute="leading" secondItem="wcQ-00-8Ay" secondAttribute="leading" id="SiU-3v-0Rk"/>
+                    <constraint firstItem="ZrI-EU-OYm" firstAttribute="top" secondItem="m2H-NO-pCy" secondAttribute="bottom" constant="6" id="Wel-XO-kwh"/>
+                    <constraint firstItem="m2H-NO-pCy" firstAttribute="leading" secondItem="V3E-Rn-AZP" secondAttribute="leading" id="YDY-9d-xZL"/>
+                    <constraint firstItem="HDG-8r-LZK" firstAttribute="baseline" secondItem="yuU-qa-RKu" secondAttribute="baseline" id="aM6-Ow-qoA"/>
+                    <constraint firstItem="YQz-50-gPv" firstAttribute="centerX" secondItem="qUh-go-yd9" secondAttribute="centerX" id="bYX-lc-SFv"/>
+                    <constraint firstItem="yuU-qa-RKu" firstAttribute="height" secondItem="ZrI-EU-OYm" secondAttribute="height" multiplier="1.02857" id="c0z-hf-bQT"/>
+                    <constraint firstItem="ZhH-fz-INq" firstAttribute="leading" secondItem="wcQ-00-8Ay" secondAttribute="trailing" constant="83" id="dWJ-2t-GJa"/>
+                    <constraint firstItem="qUh-go-yd9" firstAttribute="centerY" secondItem="ZhH-fz-INq" secondAttribute="centerY" id="eeH-FF-ZfN"/>
+                    <constraint firstItem="Ng4-Tm-dX9" firstAttribute="top" secondItem="ZhH-fz-INq" secondAttribute="bottom" constant="5" id="i1q-Hi-tcP"/>
+                    <constraint firstItem="YQz-50-gPv" firstAttribute="bottom" secondItem="1wh-F0-iGx" secondAttribute="bottomMargin" id="jMX-gi-r0y"/>
+                    <constraint firstItem="wcQ-00-8Ay" firstAttribute="leading" secondItem="yuU-qa-RKu" secondAttribute="leading" id="n82-wl-hA3"/>
+                    <constraint firstItem="m2H-NO-pCy" firstAttribute="trailing" secondItem="V3E-Rn-AZP" secondAttribute="trailing" id="otI-aN-2G2"/>
+                    <constraint firstItem="ZrI-EU-OYm" firstAttribute="leading" secondItem="m2H-NO-pCy" secondAttribute="leading" id="p6z-ig-LrV"/>
+                    <constraint firstItem="HDG-8r-LZK" firstAttribute="firstBaseline" secondItem="yuU-qa-RKu" secondAttribute="baseline" id="xyw-Zv-ARr"/>
+                    <constraint firstItem="Ng4-Tm-dX9" firstAttribute="leading" secondItem="I1j-J8-CYc" secondAttribute="trailing" constant="3.5" id="yjY-aC-vVe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="V3E-Rn-AZP" firstAttribute="top" secondItem="bXh-GF-joB" secondAttribute="top" constant="9" id="QRu-WA-yQn"/>
+                <constraint firstItem="V3E-Rn-AZP" firstAttribute="leading" secondItem="bXh-GF-joB" secondAttribute="leading" constant="20" id="cZL-d3-IUe"/>
+                <constraint firstAttribute="trailing" secondItem="V3E-Rn-AZP" secondAttribute="trailing" constant="20" id="tcG-db-YQ7"/>
+            </constraints>
+            <connections>
+                <outlet property="fuelPrice" destination="Ng4-Tm-dX9" id="W1A-XJ-HuZ"/>
+                <outlet property="fuelProvider" destination="n2c-8R-25S" id="bEn-Z0-AL0"/>
+                <outlet property="gallonsCount" destination="HDG-8r-LZK" id="wyb-QH-7le"/>
+                <outlet property="stationAddresss" destination="m2H-NO-pCy" id="yT6-KT-yHt"/>
+                <outlet property="stationName" destination="V3E-Rn-AZP" id="zfm-pg-TbR"/>
+                <outlet property="typeOfFuel" destination="I1j-J8-CYc" id="ZfP-aE-s7Z"/>
+                <outlet property="userCount" destination="YQz-50-gPv" id="FCh-96-oax"/>
+            </connections>
+            <point key="canvasLocation" x="66.666666666666671" y="56.25"/>
+        </tableViewCell>
+    </objects>
+</document>

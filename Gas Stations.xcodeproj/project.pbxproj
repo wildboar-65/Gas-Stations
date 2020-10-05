@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F1A9AB09051F942731665F8 /* Pods_Gas_Stations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48EFECBF4E3800FB183C6DF9 /* Pods_Gas_Stations.framework */; };
+		3E23D02725246218002ECEC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E23D02625246218002ECEC2 /* AppDelegate.swift */; };
+		3E23D02925246218002ECEC2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E23D02825246218002ECEC2 /* SceneDelegate.swift */; };
+		3E23D02E25246218002ECEC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E23D02C25246218002ECEC2 /* Main.storyboard */; };
+		3E23D0302524621A002ECEC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E23D02F2524621A002ECEC2 /* Assets.xcassets */; };
+		3E23D0332524621A002ECEC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E23D0312524621A002ECEC2 /* LaunchScreen.storyboard */; };
+		3E23D03B25246272002ECEC2 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E23D03A25246272002ECEC2 /* LogInViewController.swift */; };
+		3E23D03D252462F1002ECEC2 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E23D03C252462F1002ECEC2 /* CreateAccountViewController.swift */; };
+		3E23D03F25246312002ECEC2 /* GasStationsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E23D03E25246312002ECEC2 /* GasStationsContainer.swift */; };
+		3E23D04125246338002ECEC2 /* MapAddGasStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E23D04025246338002ECEC2 /* MapAddGasStationViewController.swift */; };
+		3E23D047252465DE002ECEC2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E23D046252465DE002ECEC2 /* GoogleService-Info.plist */; };
+		3E23D04A25248E2B002ECEC2 /* TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E23D04925248E2B002ECEC2 /* TextFieldDelegate.swift */; };
+		3E23D0502524A67B002ECEC2 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E23D04F2524A67B002ECEC2 /* UserSettings.swift */; };
+		3E23D0522524A7E8002ECEC2 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E23D0512524A7E8002ECEC2 /* GlobalConstants.swift */; };
+		3E23D0542524AE51002ECEC2 /* LogInVCTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E23D0532524AE51002ECEC2 /* LogInVCTextFieldDelegate.swift */; };
+		3E3CA7872524BACC00146235 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3CA7862524BACC00146235 /* StringExtension.swift */; };
+		3E3CA78D2524FD0C00146235 /* GasStationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3CA78C2524FD0C00146235 /* GasStationListViewController.swift */; };
+		3E3CA78F2524FD2200146235 /* StationStatisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3CA78E2524FD2200146235 /* StationStatisticViewController.swift */; };
+		3E3CA7932525FB2D00146235 /* PopUpForCreateStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3CA7922525FB2D00146235 /* PopUpForCreateStationViewController.swift */; };
+		3E3CA79525260A4F00146235 /* CreateNewGasStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3CA79425260A4F00146235 /* CreateNewGasStationViewController.swift */; };
+		3E3CA79B2526539600146235 /* LocalGasStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3CA79A2526539600146235 /* LocalGasStation.swift */; };
+		3E3CA79D252655A900146235 /* CloudGasStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3CA79C252655A900146235 /* CloudGasStation.swift */; };
+		3E3CA79F2526DFA300146235 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3CA79E2526DFA300146235 /* NetworkService.swift */; };
+		3E3CA7A32527581100146235 /* GasStationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3CA7A22527581100146235 /* GasStationAnnotation.swift */; };
+		3E3CA7A9252889C600146235 /* PopUpWithStationInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3CA7A8252889C600146235 /* PopUpWithStationInfoViewController.swift */; };
+		3E3CA7AB25288CA100146235 /* MapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3CA7AA25288CA100146235 /* MapViewDelegate.swift */; };
+		3E3CA7AD25288CE500146235 /* CLLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3CA7AC25288CE500146235 /* CLLocationManagerDelegate.swift */; };
+		3E3CA7AF25288D2F00146235 /* PopoverPresentationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3CA7AE25288D2F00146235 /* PopoverPresentationControllerDelegate.swift */; };
+		3E3CA7B42528BFD300146235 /* StationStatisticTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3CA7B32528BFD300146235 /* StationStatisticTableViewCell.swift */; };
+		3E3CA7B62528C45000146235 /* StatisticCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E3CA7B52528C45000146235 /* StatisticCell.xib */; };
+		3EEC25B52529C3B700BF545D /* GSLTableViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEC25B42529C3B700BF545D /* GSLTableViewDelegates.swift */; };
+		3EEC25B82529C3DE00BF545D /* GSLTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEC25B72529C3DE00BF545D /* GSLTableViewDataSource.swift */; };
+		3EEC25BC2529D08500BF545D /* SSTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEC25BB2529D08500BF545D /* SSTableDataSource.swift */; };
+		3EEC25BE2529D11000BF545D /* AlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEC25BD2529D11000BF545D /* AlertExtension.swift */; };
+		3EEC25C1252A1AAB00BF545D /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEC25C0252A1AAB00BF545D /* UIViewControllerExtension.swift */; };
+		3EEC25E5252A2B9900BF545D /* CNGSTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEC25E4252A2B9900BF545D /* CNGSTextFieldDelegate.swift */; };
+		3EEC25F0252AEA3F00BF545D /* MAGSPopUpForCreateStationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEC25EF252AEA3F00BF545D /* MAGSPopUpForCreateStationDelegate.swift */; };
+		3EEC25F2252AEA6D00BF545D /* MAGSPopUpWithStationInfoDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEC25F1252AEA6D00BF545D /* MAGSPopUpWithStationInfoDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3E23D02325246218002ECEC2 /* Gas Stations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gas Stations.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E23D02625246218002ECEC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3E23D02825246218002ECEC2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3E23D02D25246218002ECEC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3E23D02F2524621A002ECEC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E23D0322524621A002ECEC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3E23D0342524621A002ECEC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E23D03A25246272002ECEC2 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		3E23D03C252462F1002ECEC2 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		3E23D03E25246312002ECEC2 /* GasStationsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasStationsContainer.swift; sourceTree = "<group>"; };
+		3E23D04025246338002ECEC2 /* MapAddGasStationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAddGasStationViewController.swift; sourceTree = "<group>"; };
+		3E23D046252465DE002ECEC2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3E23D04925248E2B002ECEC2 /* TextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDelegate.swift; sourceTree = "<group>"; };
+		3E23D04F2524A67B002ECEC2 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		3E23D0512524A7E8002ECEC2 /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+		3E23D0532524AE51002ECEC2 /* LogInVCTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVCTextFieldDelegate.swift; sourceTree = "<group>"; };
+		3E3CA7862524BACC00146235 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		3E3CA78C2524FD0C00146235 /* GasStationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasStationListViewController.swift; sourceTree = "<group>"; };
+		3E3CA78E2524FD2200146235 /* StationStatisticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationStatisticViewController.swift; sourceTree = "<group>"; };
+		3E3CA7922525FB2D00146235 /* PopUpForCreateStationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpForCreateStationViewController.swift; sourceTree = "<group>"; };
+		3E3CA79425260A4F00146235 /* CreateNewGasStationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewGasStationViewController.swift; sourceTree = "<group>"; };
+		3E3CA79A2526539600146235 /* LocalGasStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalGasStation.swift; sourceTree = "<group>"; };
+		3E3CA79C252655A900146235 /* CloudGasStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudGasStation.swift; sourceTree = "<group>"; };
+		3E3CA79E2526DFA300146235 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		3E3CA7A22527581100146235 /* GasStationAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasStationAnnotation.swift; sourceTree = "<group>"; };
+		3E3CA7A8252889C600146235 /* PopUpWithStationInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpWithStationInfoViewController.swift; sourceTree = "<group>"; };
+		3E3CA7AA25288CA100146235 /* MapViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewDelegate.swift; sourceTree = "<group>"; };
+		3E3CA7AC25288CE500146235 /* CLLocationManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationManagerDelegate.swift; sourceTree = "<group>"; };
+		3E3CA7AE25288D2F00146235 /* PopoverPresentationControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverPresentationControllerDelegate.swift; sourceTree = "<group>"; };
+		3E3CA7B32528BFD300146235 /* StationStatisticTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationStatisticTableViewCell.swift; sourceTree = "<group>"; };
+		3E3CA7B52528C45000146235 /* StatisticCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticCell.xib; sourceTree = "<group>"; };
+		3EEC25B42529C3B700BF545D /* GSLTableViewDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSLTableViewDelegates.swift; sourceTree = "<group>"; };
+		3EEC25B72529C3DE00BF545D /* GSLTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSLTableViewDataSource.swift; sourceTree = "<group>"; };
+		3EEC25BB2529D08500BF545D /* SSTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSTableDataSource.swift; sourceTree = "<group>"; };
+		3EEC25BD2529D11000BF545D /* AlertExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertExtension.swift; sourceTree = "<group>"; };
+		3EEC25C0252A1AAB00BF545D /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		3EEC25E4252A2B9900BF545D /* CNGSTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNGSTextFieldDelegate.swift; sourceTree = "<group>"; };
+		3EEC25EF252AEA3F00BF545D /* MAGSPopUpForCreateStationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAGSPopUpForCreateStationDelegate.swift; sourceTree = "<group>"; };
+		3EEC25F1252AEA6D00BF545D /* MAGSPopUpWithStationInfoDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAGSPopUpWithStationInfoDelegate.swift; sourceTree = "<group>"; };
+		48EFECBF4E3800FB183C6DF9 /* Pods_Gas_Stations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gas_Stations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7446214D844EA283ECD67083 /* Pods-Gas Stations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gas Stations.debug.xcconfig"; path = "Target Support Files/Pods-Gas Stations/Pods-Gas Stations.debug.xcconfig"; sourceTree = "<group>"; };
+		DFDFADC1F0364176E86650BE /* Pods-Gas Stations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gas Stations.release.xcconfig"; path = "Target Support Files/Pods-Gas Stations/Pods-Gas Stations.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E23D02025246218002ECEC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F1A9AB09051F942731665F8 /* Pods_Gas_Stations.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A6CB462E4E27A304403FD26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48EFECBF4E3800FB183C6DF9 /* Pods_Gas_Stations.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E23D01A25246218002ECEC2 = {
+			isa = PBXGroup;
+			children = (
+				3E23D02525246218002ECEC2 /* Gas Stations */,
+				3E23D02425246218002ECEC2 /* Products */,
+				4AC8A192AB29BD996E405AD3 /* Pods */,
+				0A6CB462E4E27A304403FD26 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3E23D02425246218002ECEC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E23D02325246218002ECEC2 /* Gas Stations.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E23D02525246218002ECEC2 /* Gas Stations */ = {
+			isa = PBXGroup;
+			children = (
+				3E23D02625246218002ECEC2 /* AppDelegate.swift */,
+				3E23D02825246218002ECEC2 /* SceneDelegate.swift */,
+				3EEC25EA252A541100BF545D /* Model */,
+				3E23D04525246440002ECEC2 /* Controllers */,
+				3E23D04225246347002ECEC2 /* Storyboards */,
+				3EEC25E6252A53B900BF545D /* Service */,
+				3EEC25E7252A53D200BF545D /* Helpers */,
+				3E23D04325246357002ECEC2 /* Resource */,
+				3E23D0342524621A002ECEC2 /* Info.plist */,
+				3E23D046252465DE002ECEC2 /* GoogleService-Info.plist */,
+			);
+			path = "Gas Stations";
+			sourceTree = "<group>";
+		};
+		3E23D04225246347002ECEC2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3E23D02C25246218002ECEC2 /* Main.storyboard */,
+				3E23D0312524621A002ECEC2 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		3E23D04325246357002ECEC2 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				3E23D04425246361002ECEC2 /* Assets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		3E23D04425246361002ECEC2 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3E23D02F2524621A002ECEC2 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		3E23D04525246440002ECEC2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3E23D04C25248EF1002ECEC2 /* LogInViewController */,
+				3E23D04825248E05002ECEC2 /* CreateAcountViewController */,
+				3E23D04D25248FC5002ECEC2 /* GasStationViewController */,
+				3E23D04E25248FD6002ECEC2 /* MapAddGasStationViewController */,
+				3EEC25F3252AF8D200BF545D /* PopUpWithStationInfoViewController */,
+				3EEC25E2252A2B5200BF545D /* CreateNewGasStationViewController */,
+				3EEC25B1252904E000BF545D /* PopUpWhenNewPinSelected */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3E23D04825248E05002ECEC2 /* CreateAcountViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E23D03C252462F1002ECEC2 /* CreateAccountViewController.swift */,
+				3E23D04B25248E31002ECEC2 /* ViewController Extension */,
+			);
+			path = CreateAcountViewController;
+			sourceTree = "<group>";
+		};
+		3E23D04B25248E31002ECEC2 /* ViewController Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3E23D04925248E2B002ECEC2 /* TextFieldDelegate.swift */,
+			);
+			path = "ViewController Extension";
+			sourceTree = "<group>";
+		};
+		3E23D04C25248EF1002ECEC2 /* LogInViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E23D03A25246272002ECEC2 /* LogInViewController.swift */,
+				3E23D0532524AE51002ECEC2 /* LogInVCTextFieldDelegate.swift */,
+			);
+			path = LogInViewController;
+			sourceTree = "<group>";
+		};
+		3E23D04D25248FC5002ECEC2 /* GasStationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3EEC25B22529060600BF545D /* GasStationContainer */,
+				3EEC25B32529C36900BF545D /* GasStationListViewController */,
+				3EEC25B92529D05400BF545D /* GasStationStatisticViewController */,
+				3EEC25BF2529D54B00BF545D /* View */,
+			);
+			path = GasStationViewController;
+			sourceTree = "<group>";
+		};
+		3E23D04E25248FD6002ECEC2 /* MapAddGasStationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E23D04025246338002ECEC2 /* MapAddGasStationViewController.swift */,
+				3E3CA7B025288E5000146235 /* MAGS Controler Extension */,
+			);
+			path = MapAddGasStationViewController;
+			sourceTree = "<group>";
+		};
+		3E3CA7B025288E5000146235 /* MAGS Controler Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3E3CA7AC25288CE500146235 /* CLLocationManagerDelegate.swift */,
+				3E3CA7AE25288D2F00146235 /* PopoverPresentationControllerDelegate.swift */,
+				3E3CA7AA25288CA100146235 /* MapViewDelegate.swift */,
+				3EEC25EF252AEA3F00BF545D /* MAGSPopUpForCreateStationDelegate.swift */,
+				3EEC25F1252AEA6D00BF545D /* MAGSPopUpWithStationInfoDelegate.swift */,
+			);
+			path = "MAGS Controler Extension";
+			sourceTree = "<group>";
+		};
+		3EEC25B1252904E000BF545D /* PopUpWhenNewPinSelected */ = {
+			isa = PBXGroup;
+			children = (
+				3E3CA7922525FB2D00146235 /* PopUpForCreateStationViewController.swift */,
+			);
+			path = PopUpWhenNewPinSelected;
+			sourceTree = "<group>";
+		};
+		3EEC25B22529060600BF545D /* GasStationContainer */ = {
+			isa = PBXGroup;
+			children = (
+				3E23D03E25246312002ECEC2 /* GasStationsContainer.swift */,
+			);
+			path = GasStationContainer;
+			sourceTree = "<group>";
+		};
+		3EEC25B32529C36900BF545D /* GasStationListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E3CA78C2524FD0C00146235 /* GasStationListViewController.swift */,
+				3EEC25B62529C3BB00BF545D /* GSLExtension */,
+			);
+			path = GasStationListViewController;
+			sourceTree = "<group>";
+		};
+		3EEC25B62529C3BB00BF545D /* GSLExtension */ = {
+			isa = PBXGroup;
+			children = (
+				3EEC25B42529C3B700BF545D /* GSLTableViewDelegates.swift */,
+				3EEC25B72529C3DE00BF545D /* GSLTableViewDataSource.swift */,
+			);
+			path = GSLExtension;
+			sourceTree = "<group>";
+		};
+		3EEC25B92529D05400BF545D /* GasStationStatisticViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E3CA78E2524FD2200146235 /* StationStatisticViewController.swift */,
+				3EEC25BA2529D06800BF545D /* SSExtension */,
+			);
+			path = GasStationStatisticViewController;
+			sourceTree = "<group>";
+		};
+		3EEC25BA2529D06800BF545D /* SSExtension */ = {
+			isa = PBXGroup;
+			children = (
+				3EEC25BB2529D08500BF545D /* SSTableDataSource.swift */,
+			);
+			path = SSExtension;
+			sourceTree = "<group>";
+		};
+		3EEC25BF2529D54B00BF545D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3E3CA7B32528BFD300146235 /* StationStatisticTableViewCell.swift */,
+				3E3CA7B52528C45000146235 /* StatisticCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3EEC25E2252A2B5200BF545D /* CreateNewGasStationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E3CA79425260A4F00146235 /* CreateNewGasStationViewController.swift */,
+				3EEC25E3252A2B7200BF545D /* CNSG Extension */,
+			);
+			path = CreateNewGasStationViewController;
+			sourceTree = "<group>";
+		};
+		3EEC25E3252A2B7200BF545D /* CNSG Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3EEC25E4252A2B9900BF545D /* CNGSTextFieldDelegate.swift */,
+			);
+			path = "CNSG Extension";
+			sourceTree = "<group>";
+		};
+		3EEC25E6252A53B900BF545D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3EEC25EB252A543400BF545D /* UserDefaults */,
+				3EEC25EC252A546800BF545D /* Network */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3EEC25E7252A53D200BF545D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3EEC25E9252A53E700BF545D /* Extensions */,
+				3EEC25E8252A53DC00BF545D /* Constant */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3EEC25E8252A53DC00BF545D /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				3E23D0512524A7E8002ECEC2 /* GlobalConstants.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		3EEC25E9252A53E700BF545D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3E3CA7862524BACC00146235 /* StringExtension.swift */,
+				3EEC25BD2529D11000BF545D /* AlertExtension.swift */,
+				3EEC25C0252A1AAB00BF545D /* UIViewControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3EEC25EA252A541100BF545D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E3CA79A2526539600146235 /* LocalGasStation.swift */,
+				3E3CA79C252655A900146235 /* CloudGasStation.swift */,
+				3E3CA7A22527581100146235 /* GasStationAnnotation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3EEC25EB252A543400BF545D /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				3E23D04F2524A67B002ECEC2 /* UserSettings.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		3EEC25EC252A546800BF545D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3E3CA79E2526DFA300146235 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3EEC25F3252AF8D200BF545D /* PopUpWithStationInfoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E3CA7A8252889C600146235 /* PopUpWithStationInfoViewController.swift */,
+			);
+			path = PopUpWithStationInfoViewController;
+			sourceTree = "<group>";
+		};
+		4AC8A192AB29BD996E405AD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7446214D844EA283ECD67083 /* Pods-Gas Stations.debug.xcconfig */,
+				DFDFADC1F0364176E86650BE /* Pods-Gas Stations.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E23D02225246218002ECEC2 /* Gas Stations */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E23D0372524621A002ECEC2 /* Build configuration list for PBXNativeTarget "Gas Stations" */;
+			buildPhases = (
+				7CC92A9B3A38E4C740B5995A /* [CP] Check Pods Manifest.lock */,
+				3E23D01F25246218002ECEC2 /* Sources */,
+				3E23D02025246218002ECEC2 /* Frameworks */,
+				3E23D02125246218002ECEC2 /* Resources */,
+				F3B88E58DA6B7D4F669B430B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gas Stations";
+			productName = "Gas Stations";
+			productReference = 3E23D02325246218002ECEC2 /* Gas Stations.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E23D01B25246218002ECEC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = WildBoar;
+				TargetAttributes = {
+					3E23D02225246218002ECEC2 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+				};
+			};
+			buildConfigurationList = 3E23D01E25246218002ECEC2 /* Build configuration list for PBXProject "Gas Stations" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E23D01A25246218002ECEC2;
+			productRefGroup = 3E23D02425246218002ECEC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E23D02225246218002ECEC2 /* Gas Stations */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E23D02125246218002ECEC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E3CA7B62528C45000146235 /* StatisticCell.xib in Resources */,
+				3E23D0332524621A002ECEC2 /* LaunchScreen.storyboard in Resources */,
+				3E23D047252465DE002ECEC2 /* GoogleService-Info.plist in Resources */,
+				3E23D0302524621A002ECEC2 /* Assets.xcassets in Resources */,
+				3E23D02E25246218002ECEC2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7CC92A9B3A38E4C740B5995A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gas Stations-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3B88E58DA6B7D4F669B430B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gas Stations/Pods-Gas Stations-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gas Stations/Pods-Gas Stations-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gas Stations/Pods-Gas Stations-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E23D01F25246218002ECEC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E3CA7A9252889C600146235 /* PopUpWithStationInfoViewController.swift in Sources */,
+				3E23D03D252462F1002ECEC2 /* CreateAccountViewController.swift in Sources */,
+				3EEC25C1252A1AAB00BF545D /* UIViewControllerExtension.swift in Sources */,
+				3E23D0522524A7E8002ECEC2 /* GlobalConstants.swift in Sources */,
+				3E23D04125246338002ECEC2 /* MapAddGasStationViewController.swift in Sources */,
+				3E23D03F25246312002ECEC2 /* GasStationsContainer.swift in Sources */,
+				3E3CA7932525FB2D00146235 /* PopUpForCreateStationViewController.swift in Sources */,
+				3E23D0542524AE51002ECEC2 /* LogInVCTextFieldDelegate.swift in Sources */,
+				3E3CA7B42528BFD300146235 /* StationStatisticTableViewCell.swift in Sources */,
+				3E23D04A25248E2B002ECEC2 /* TextFieldDelegate.swift in Sources */,
+				3E23D02725246218002ECEC2 /* AppDelegate.swift in Sources */,
+				3E3CA7AB25288CA100146235 /* MapViewDelegate.swift in Sources */,
+				3E3CA79F2526DFA300146235 /* NetworkService.swift in Sources */,
+				3E3CA7AF25288D2F00146235 /* PopoverPresentationControllerDelegate.swift in Sources */,
+				3EEC25F2252AEA6D00BF545D /* MAGSPopUpWithStationInfoDelegate.swift in Sources */,
+				3EEC25BE2529D11000BF545D /* AlertExtension.swift in Sources */,
+				3E3CA78D2524FD0C00146235 /* GasStationListViewController.swift in Sources */,
+				3E3CA7A32527581100146235 /* GasStationAnnotation.swift in Sources */,
+				3E23D0502524A67B002ECEC2 /* UserSettings.swift in Sources */,
+				3EEC25B82529C3DE00BF545D /* GSLTableViewDataSource.swift in Sources */,
+				3E3CA79D252655A900146235 /* CloudGasStation.swift in Sources */,
+				3EEC25BC2529D08500BF545D /* SSTableDataSource.swift in Sources */,
+				3E23D02925246218002ECEC2 /* SceneDelegate.swift in Sources */,
+				3EEC25F0252AEA3F00BF545D /* MAGSPopUpForCreateStationDelegate.swift in Sources */,
+				3E3CA79525260A4F00146235 /* CreateNewGasStationViewController.swift in Sources */,
+				3E3CA7AD25288CE500146235 /* CLLocationManagerDelegate.swift in Sources */,
+				3E3CA78F2524FD2200146235 /* StationStatisticViewController.swift in Sources */,
+				3E3CA7872524BACC00146235 /* StringExtension.swift in Sources */,
+				3EEC25E5252A2B9900BF545D /* CNGSTextFieldDelegate.swift in Sources */,
+				3E3CA79B2526539600146235 /* LocalGasStation.swift in Sources */,
+				3E23D03B25246272002ECEC2 /* LogInViewController.swift in Sources */,
+				3EEC25B52529C3B700BF545D /* GSLTableViewDelegates.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3E23D02C25246218002ECEC2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E23D02D25246218002ECEC2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3E23D0312524621A002ECEC2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E23D0322524621A002ECEC2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3E23D0352524621A002ECEC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3E23D0362524621A002ECEC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E23D0382524621A002ECEC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7446214D844EA283ECD67083 /* Pods-Gas Stations.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VAXUZR7GJ5;
+				INFOPLIST_FILE = "Gas Stations/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "WB.Gas-Stations";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E23D0392524621A002ECEC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFDFADC1F0364176E86650BE /* Pods-Gas Stations.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VAXUZR7GJ5;
+				INFOPLIST_FILE = "Gas Stations/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "WB.Gas-Stations";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E23D01E25246218002ECEC2 /* Build configuration list for PBXProject "Gas Stations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E23D0352524621A002ECEC2 /* Debug */,
+				3E23D0362524621A002ECEC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E23D0372524621A002ECEC2 /* Build configuration list for PBXNativeTarget "Gas Stations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E23D0382524621A002ECEC2 /* Debug */,
+				3E23D0392524621A002ECEC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E23D01B25246218002ECEC2 /* Project object */;
+}
